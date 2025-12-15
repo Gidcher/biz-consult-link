@@ -8,7 +8,7 @@ const Header = () => {
   const location = useLocation(); // текущий путь
 
   const navItems = [
-    { path: '/', label: 'Главная' },
+    { path: '/biz-consult-link/', label: 'Главная' },
     { path: '/consultants', label: 'Консультанты' },
     { path: '/booking', label: 'Бронирование' },
     { path: '/reviews', label: 'Отзывы' },

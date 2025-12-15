@@ -26,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     const routeTitles = {
-      '/': 'Главная',
+      '/biz-consult-link/': 'Главная',
       '/consultants': 'Консультанты',
       '/booking': 'Бронирование',
       '/reviews': 'Отзывы',
