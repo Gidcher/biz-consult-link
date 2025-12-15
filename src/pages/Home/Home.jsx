@@ -17,7 +17,7 @@ const Home = ({ reviews }) => {
         <p className="hero__description">
           Получите экспертную помощь от ведущих специалистов в области бизнес-стратегии, маркетинга и финансов
         </p>
-        <Link to="/consultants" className="hero__button">
+        <Link to="/biz-consult-link/consultants" className="hero__button">
           Выбрать консультанта
         </Link>
       </section>
@@ -54,7 +54,7 @@ const Home = ({ reviews }) => {
       <section className="home-reviews">
         <header className="home-reviews__header">
           <h2 className="home-reviews__title">Отзывы наших клиентов</h2>
-          <Link to="/reviews" className="home-reviews__button">
+          <Link to="/biz-consult-link/reviews" className="home-reviews__button">
             Все отзывы
           </Link>
         </header>
