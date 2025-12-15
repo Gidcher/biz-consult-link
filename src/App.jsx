@@ -27,10 +27,10 @@ const App = () => {
   useEffect(() => {
     const routeTitles = {
       '/biz-consult-link/': 'Главная',
-      '/consultants': 'Консультанты',
-      '/booking': 'Бронирование',
-      '/reviews': 'Отзывы',
-      '/contacts': 'Контакты'
+      '/biz-consult-link/consultants': 'Консультанты',
+      '/biz-consult-link/booking': 'Бронирование',
+      '/biz-consult-link/reviews': 'Отзывы',
+      '/biz-consult-link/contacts': 'Контакты'
     };
     document.title = `BizConsult | ${routeTitles[location.pathname] || ''}`;
   }, [location.pathname]);
@@ -47,10 +47,10 @@ const App = () => {
       <Main>
         <Routes>
           <Route path="/biz-consult-link/" element={<Home reviews={reviews} />} />
-          <Route path="/consultants" element={<Consultants consultantsData={consultantsData} openCalculator={openCalculator} />} />
-          <Route path="/booking" element={<Booking consultantsData={consultantsData} />} />
-          <Route path="/reviews" element={<Reviews consultantsData={consultantsData} reviews={reviews} setReviews={setReviews} />} />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/biz-consult-link/consultants" element={<Consultants consultantsData={consultantsData} openCalculator={openCalculator} />} />
+          <Route path="/biz-consult-link/booking" element={<Booking consultantsData={consultantsData} />} />
+          <Route path="/biz-consult-link/reviews" element={<Reviews consultantsData={consultantsData} reviews={reviews} setReviews={setReviews} />} />
+          <Route path="/biz-consult-link/contacts" element={<Contacts />} />
         </Routes>
       </Main>
       <Footer />

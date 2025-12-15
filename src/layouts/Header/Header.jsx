@@ -9,10 +9,10 @@ const Header = () => {
 
   const navItems = [
     { path: '/biz-consult-link/', label: 'Главная' },
-    { path: '/consultants', label: 'Консультанты' },
-    { path: '/booking', label: 'Бронирование' },
-    { path: '/reviews', label: 'Отзывы' },
-    { path: '/contacts', label: 'Контакты' },
+    { path: '/biz-consult-link/consultants', label: 'Консультанты' },
+    { path: '/biz-consult-link/booking', label: 'Бронирование' },
+    { path: '/biz-consult-link/reviews', label: 'Отзывы' },
+    { path: '/biz-consult-link/contacts', label: 'Контакты' },
   ];
 
   return (
