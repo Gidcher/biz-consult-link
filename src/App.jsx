@@ -46,7 +46,7 @@ const App = () => {
       <ScrollToTop />
       <Main>
         <Routes>
-          <Route path="/" element={<Home reviews={reviews} />} />
+          <Route path="/biz-consult-link/" element={<Home reviews={reviews} />} />
           <Route path="/consultants" element={<Consultants consultantsData={consultantsData} openCalculator={openCalculator} />} />
           <Route path="/booking" element={<Booking consultantsData={consultantsData} />} />
           <Route path="/reviews" element={<Reviews consultantsData={consultantsData} reviews={reviews} setReviews={setReviews} />} />
