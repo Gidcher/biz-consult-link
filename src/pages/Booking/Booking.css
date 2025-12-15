@@ -1,0 +1,37 @@
+.booking {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.booking__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .booking {
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+  }
+
+  .booking__title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  .booking__title {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+}

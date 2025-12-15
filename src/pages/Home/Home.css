@@ -1,0 +1,249 @@
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-bottom: 3rem;
+}
+
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__description {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__button {
+  text-decoration: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.hero__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.features__title {
+  font-size: 1.8rem;
+  color: #667eea;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature__icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #667eea;
+}
+
+.feature__description {
+  color: #666;
+}
+
+.home-reviews {
+  margin-top: 4rem;
+}
+
+.home-reviews__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-reviews__title {
+  font-size: 1.8rem;
+  color: #667eea;
+}
+
+.home-reviews__button {
+  text-decoration: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.home-reviews__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.home-review__card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.home-review__card-author {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.home-review__card-consultant {
+  font-size: 0.9rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.home-review__card-rating {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-review__card-text {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__description {
+    font-size: 1.1rem;
+  }
+
+  .hero__button {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+
+  .features__list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .feature {
+    padding: 1.5rem;
+  }
+
+  .feature__icon {
+    font-size: 2.5rem;
+  }
+
+  .feature__title {
+    font-size: 1.3rem;
+  }
+
+  .feature__description {
+    font-size: 0.95rem;
+  }
+
+  .home-reviews {
+    margin-top: 2rem;
+  }
+
+  .home-reviews__button {
+    padding: 0.9rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+  }
+
+  .hero__title {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .features__list {
+    gap: 1rem;
+  }
+
+  .feature {
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+  }
+
+  .feature__icon {
+    font-size: 2rem;
+  }
+
+  .feature__title {
+    font-size: 1.2rem;
+  }
+
+  .feature__description {
+    font-size: 0.9rem;
+  }
+
+  .home-reviews__header {
+    flex-direction: column;
+  }
+}

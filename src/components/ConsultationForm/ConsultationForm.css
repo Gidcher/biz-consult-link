@@ -1,0 +1,129 @@
+.consultation__form {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 100%;
+}
+
+.consultation__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.consultation__label {
+  font-weight: 600;
+  color: #333;
+}
+
+.consultation__select,
+.consultation__textarea,
+.consultation__input {
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;;
+}
+
+.consultation__textarea {
+  resize: vertical;
+}
+
+.consultation__option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.consultation__option:hover {
+  border-color: #667eea;
+  background: #f8f9ff;
+}
+
+.consultation__option--selected {
+  border-color: #667eea;
+  background: #f0f2ff;
+}
+
+.consultation__checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.consultation__option-info {
+  flex: 1;
+}
+
+.consultation__option-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.consultation__option-price {
+  color: #667eea;
+  font-size: 0.9rem;
+}
+
+.consultation__summary {
+  background: #f8f9ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.consultation__summary-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #667eea;
+}
+
+.consultation__summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.consultation__summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e0e0e0;
+  color: #667eea;
+}
+
+.consultation__discount {
+  background: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.consultation__book {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: transform 0.3s;
+}
+
+.consultation__book:hover {
+  transform: translateY(-2px);
+}
+

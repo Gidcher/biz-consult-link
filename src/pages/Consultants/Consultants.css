@@ -1,0 +1,170 @@
+.consultants {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.consultants-filter {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.consultants-filter__button {
+  padding: 0.5rem 1rem;
+  background: #f1f1f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+
+.consultants-filter__button:hover {
+  background: #e6e6f5;
+}
+
+.consultants-filter__button--active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.consultants-filter-mobile {
+  display: none;
+  margin-bottom: 1.5rem;
+}
+
+.consultants-filter__select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  background: white;
+}
+
+.consultants-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, boxhadow 0.3s;
+}
+
+.consultants-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.consultants-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.consultants-card__avatar {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #667eea;
+  border-radius: 1rem;
+  display: block;
+  background-color: #DBDBDB;
+}
+
+.consultants-card__specialization {
+  color: #667eea;
+}
+
+.consultants-card__stats {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+}
+
+.consultants-card__stat {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.consultants-card__description {
+  color: #666;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.consultants-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.consultants-card__rate {
+  font-size: 1.3rem;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #667eea;
+}
+
+.consultants-card__button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.consultants-card__button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .consultants-card {
+    padding: 1rem;
+  }
+
+  .consultants-card__header {
+    gap: 0.5rem
+  }
+
+  .consultants-card__avatar {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .consultants-filter {
+    display: none;
+  }
+
+  .consultants-filter-mobile {
+    display: block;
+  }
+
+  .consultants-card__avatar {
+    font-size: 3rem;
+  }
+
+  .consultants-card__footer {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
