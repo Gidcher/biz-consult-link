@@ -19,7 +19,7 @@ const Header = () => {
     <header className="header">
       <div className="header__container">
         <Link
-          to="/"
+          to="/biz-consult-link/"
           className="header__logo"
           onClick={() => setIsMenuOpen(false)}
         >
