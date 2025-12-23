@@ -25,6 +25,12 @@ const Reviews = ({ consultantsData, reviews, setReviews }) => {
 
   return (
     <>
+      <div className="visually-hidden">
+        Отзывы клиентов о бизнес-консультантах BizConsult.
+        Реальные мнения предпринимателей о качестве консультаций.
+        Оценки экспертов, опыт сотрудничества и результаты работы.
+        Добавляйте собственные отзывы и делитесь впечатлениями.
+      </div>
       <header className="reviews__header">
         <h1 className="reviews__title">Отзывы клиентов</h1>
         <button

@@ -13,6 +13,12 @@ const Consultants = ({ consultantsData, openCalculator }) => {
 
   return (
     <>
+      <div className="visually-hidden">
+        Каталог профессиональных бизнес-консультантов BizConsult.
+        Эксперты по стратегии развития, маркетингу, финансам, управлению персоналом.
+        Выбор консультанта по рейтингу, опыту и специализации.
+        Индивидуальные и корпоративные консультации для бизнеса.
+      </div>
       <h1 className="hero__title">Наши консультанты</h1>
       <nav className="consultants-filter">
         {categories.map(cat => (

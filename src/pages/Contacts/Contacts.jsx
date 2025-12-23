@@ -23,6 +23,12 @@ const Contacts= () => {
 
   return (
     <>
+      <div className="visually-hidden">
+        Контактная информация компании BizConsult.
+        Связь с командой сервиса бизнес-консультаций.
+        Адрес офиса, телефон, электронная почта и форма обратной связи.
+        Поддержка клиентов и консультации по услугам.
+      </div>
       <div className="contacts">
         <div className="contacts__inner">
           <section className="contacts__info">
